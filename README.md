@@ -2,6 +2,8 @@
 
 Simple js library that allows you to easily create scrollable layers.
 
+[Demo](http://www.katsuyan.me)
+
 ## Quick start
 
 Download scrollable-layer.js from `git clone git://github.com/katsuyan/scrollable-layer/pkg/scrollable-layer.min.js`.
@@ -24,7 +26,7 @@ This initially positions the div element 30px from top of the document. Then the
 Reporting Bugs
 ==============
 
-Please direct bug reports to the [myna issue tracker on GitHub](http://github.com/katsuyan/myna/issues)
+Please direct bug reports to the [myna issue tracker on GitHub](http://github.com/katsuyan/scrollable-layer/issues)
 
 Copyright and License
 ====================
