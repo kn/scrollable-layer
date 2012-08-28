@@ -23,13 +23,17 @@ For example:
 
 This initially positions the div element 30px from top of the document. Then the div element becomes scrollable after document is scrolled by 30px. It continues to be scrollable until document is scrolled by 60px.
 
-Reporting Bugs
-==============
+## Dependencies
+
+scrollable-layer.js expects jQuery to be loaded. It should be compatible with the most of the recent jQuery versions but only v1.7 has been tested so far.
+
+Make sure to include jQuery before scrollable-layer.js.
+
+## Reporting Bugs
 
 Please direct bug reports to the [myna issue tracker on GitHub](http://github.com/katsuyan/scrollable-layer/issues)
 
-Copyright and License
-====================
+## Copyright and License
 
 Copyright 2012 Katsuya Noguchi
 
