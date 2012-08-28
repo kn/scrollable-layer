@@ -13,9 +13,9 @@ Include the file in your HTML:
 
 For those HTML elements you want to make scrollable layer, add `scrollable-layer` class and layer-top, scroll-start and scroll-end data attributes.
 
-* `layer-top` - Initial top position.
-* `scroll-start` - scrollTop position that makes a layer scrollable.
-* `scroll-end` - scrollTop position that makes a layer not scrollable.
+* `layer-top` - Initial top position (default: 0).
+* `scroll-start` - scrollTop position that makes a layer scrollable (default: 0).
+* `scroll-end` - scrollTop position that makes a layer not scrollable (default: document height).
 
 For example:
 

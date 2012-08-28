@@ -26,9 +26,9 @@
         data = {};
         $layer = $(layer);
         data.elem = $layer;
-        data.init = getNumberData($layer, "layer-top");
-        data.start = getNumberData($layer, 'scroll-start');
-        data.end = getNumberData($layer, 'scroll-end');
+        data.init = getNumberData($layer, 'layer-top') || 0;
+        data.start = getNumberData($layer, 'scroll-start') || 0;
+        data.end = getNumberData($layer, 'scroll-end') || $(document).height();
         data.min = data.init - (data.end - data.start);
         layers.push(data);
         $layer.css('position', 'fixed');
@@ -49,6 +49,12 @@
     return top;
   };
   return getNumberData = function($layer, type) {
-    return parseInt($layer.data(type));
+    var numStr;
+    numStr = $layer.data(type);
+    if (numStr != null) {
+      return parseInt(numStr);
+    } else {
+      return null;
+    }
   };
 })(window.jQuery);
