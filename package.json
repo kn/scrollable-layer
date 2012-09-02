@@ -2,7 +2,7 @@
   "author": "Katsuya Noguchi <katsuya@twitter.com> (http://www.katsuyan.me)",
   "name": "scrollable-layer",
   "description": "Compact and simple library that allows you to create scrollable layers.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/katsuyan/scrollable-layer",
   "repository": {
     "url": "https://github.com/katsuyan/scrollable-layer.git"
