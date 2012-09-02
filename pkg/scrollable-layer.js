@@ -3,9 +3,9 @@
 (function($) {
   var getNewLayerTop, getNumberData, initializeScrollableLayers;
   $(function() {
-    var layers;
+    var layers, updateScrollableLayers;
     layers = initializeScrollableLayers();
-    return $(document).scroll(function(e) {
+    updateScrollableLayers = function(e) {
       var layer, scrollTop, _i, _len, _results;
       scrollTop = parseInt($(document).scrollTop());
       _results = [];
@@ -14,7 +14,9 @@
         _results.push(layer.elem.css('top', getNewLayerTop(layer, scrollTop)));
       }
       return _results;
-    });
+    };
+    updateScrollableLayers();
+    return $(document).scroll(updateScrollableLayers);
   });
   initializeScrollableLayers = function() {
     var $layer, $layers, data, layer, layers, _i, _len;

@@ -2,10 +2,13 @@
   $ ->
     layers = initializeScrollableLayers()
 
-    $(document).scroll (e) ->
+    updateScrollableLayers = (e) ->
       scrollTop = parseInt $(document).scrollTop()
       for layer in layers
         layer.elem.css 'top', getNewLayerTop(layer, scrollTop)
+
+    updateScrollableLayers()
+    $(document).scroll updateScrollableLayers
 
   initializeScrollableLayers = ->
     layers = []
