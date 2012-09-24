@@ -1,5 +1,7 @@
 ## scrollable-layer.js
 
+This library is deprecated. You should use [scrollable.js](https://github.com/katsuyan/scrollable) instead.
+
 Simple js library that allows you to easily create scrollable layers.
 
 [Demo](http://www.katsuyan.me)
